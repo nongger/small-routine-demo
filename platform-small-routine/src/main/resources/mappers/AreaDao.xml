@@ -1,0 +1,69 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nonegger.platform.smallroutine.dao.AreaDao">
+    <!--<resultMap type="org.apache.ibatis.submitted.rounding.User" id="usermap">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="funkyNumber" property="funkyNumber"/>
+        <result column="roundingMode" property="roundingMode"/>
+    </resultMap>-->
+
+    <select id="queryAreas" resultType="com.nonegger.platform.smallroutine.entity.AreaEntity">
+        SELECT area_id,area_name,priority,ctime,mtime,is_delete
+        FROM tb_area
+        ORDER BY priority;
+    </select>
+    <select id="queryById" resultType="com.nonegger.platform.smallroutine.entity.AreaEntity">
+        SELECT area_id,area_name,priority,ctime,mtime,is_delete
+        FROM tb_area
+        WHERE area_id = #{areaId}
+    </select>
+
+    <insert id="insertArea" useGeneratedKeys="true" keyColumn="area_id" keyProperty="areaId"
+            parameterType="com.nonegger.platform.smallroutine.entity.AreaEntity">
+        insert into tb_area (
+        area_name
+        <if test="priority != null">, priority</if>
+        <if test="isDelete != null">, </if>
+        <if test="ctime != null">, ctime</if>
+        <if test="mtime != null">, mtime</if>
+        ) values (
+        #{areaName}
+        <if test="priority != null">, #{priority}</if>
+        <if test="isDelete != null">, #{isDelete}</if>
+        <if test="ctime != null">, #{ctime}</if>
+        <if test="mtime != null">, #{mtime}</if>
+        )
+    </insert>
+
+    <update id="upadateArea" parameterType="com.nonegger.platform.smallroutine.entity.AreaEntity">
+        UPDATE tb_area
+        <set>
+            <if test="areaName != null">area_name=#{areaName},</if>
+            <if test="priority != null">priority=#{priority},</if>
+            <if test="isDelete != null">is_delete=#{isDelete}</if>
+        </set>
+        WHERE area_id=#{areaId}
+    </update>
+    <delete id="deleteAreaById">
+        DELETE FROM
+        tb_area
+        WHERE area_id=#{areaId}
+    </delete>
+
+    <!--<resultMap type="org.apache.ibatis.submitted.rounding.User" id="usermap2">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="funkyNumber" property="funkyNumber"/>
+        <result column="roundingMode" property="roundingMode" typeHandler="org.apache.ibatis.type.EnumTypeHandler"/>
+    </resultMap>
+
+    <insert id="insert2">
+        insert into users2 (id, name, funkyNumber, roundingMode) values (
+        #{id}, #{name}, #{funkyNumber}, #{roundingMode, typeHandler=org.apache.ibatis.type.EnumTypeHandler}
+        )
+    </insert>-->
+
+</mapper>
