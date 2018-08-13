@@ -1,0 +1,50 @@
+/* pages/swiper/swiper.wxss */
+
+swiper {
+  width: 100%;
+  height: 340rpx;
+}
+swiper image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.prod-list {
+}
+.prod-item {
+  overflow: hidden;
+  padding: 15rpx;
+}
+.prod-logo {
+  float: left;
+  width: 270rpx;
+  height: 195rpx;
+}
+.prod-body {
+  margin-left: 280rpx;
+}
+.prod-title {
+  color: #212121;
+  font-size: 34rpx;
+  line-height: 1;
+}
+.prod-desc {
+  color: #9a9a0a;
+  font-size: 28rpx;
+  line-height: 1;
+}
+.prod-footer {
+  overflow: hidden;
+}
+.btn-detail {
+  float: left;
+  width: 200rpx;
+  height: 54rpx;
+}
+.btn-ask {
+  float: left;
+  width: 200rpx;
+  height: 54rpx;
+  margin-left: 20rpx;
+}

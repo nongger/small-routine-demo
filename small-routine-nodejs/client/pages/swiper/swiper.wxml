@@ -1,0 +1,21 @@
+<!--pages/swiper/swiper.wxml 制作轮播效果-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='prod-list'>
+  <view class='prod-item' wx:for='{{prodList}}'>
+    <image class='prod-logo' src='{{item.logo}}'></image>
+    <view class='prod-body'>
+      <view class='prod-title'>{{item.title}}</view>
+      <text class='prod-desc'>{{item.desc}}</text>
+      <view class='prod-footer'>
+        <image class='btn-detail' src='/static/images/detail_study.png'></image>
+        <image class='btn-ask' src='/static/images/ask_study.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
