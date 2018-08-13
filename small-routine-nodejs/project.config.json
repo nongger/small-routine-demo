@@ -13,5 +13,32 @@
 	"appid": "wxae14c7b31f819417",
 	"projectname": "swiper-project",
 	"libVersion": "2.2.2",
-	"condition": {}
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "join",
+					"pathName": "pages/join/join",
+					"query": ""
+				}
+			]
+		}
+	}
 }

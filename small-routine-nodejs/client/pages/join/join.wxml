@@ -1,0 +1,11 @@
+<!--pages/join/join.wxml-->
+<image class='banner' src='/static/images/bottle_wine.jpg'></image>
+<view class='block' wx:for='{{introduce}}'>
+  <view class='block-title'>{{item.title}}</view>
+  <text class='block-desc'>{{item.desc}}</text>
+</view>
+
+<view class='prod-footer'>
+  <button open-type="contact" class='btn-detail'>在线交流</button>
+  <button bindtap='call' class='btn-ask'>电话咨询</button>
+</view>

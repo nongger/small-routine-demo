@@ -21,6 +21,7 @@
   display: table;
   align-items: center;
   justify-content: space-between;
+  margin-left: 15rpx;
   box-sizing: border-box;
   padding-top: 10rpx;
   padding-bottom: 10rpx;

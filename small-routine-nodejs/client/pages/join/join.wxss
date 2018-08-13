@@ -1,0 +1,58 @@
+/* pages/join/join.wxss */
+page {
+  background: #f3f3f3;
+}
+.banner {
+  display: block;
+  width: 100%;
+  height: 340rpx;
+}
+.block {
+  background: #fff;
+  margin-top: 15rpx;
+}
+.block-title {
+  position: relative;
+  font-size: 34rpx;
+  line-height: 1.5;
+  color: #2e5e86;
+  padding: 10rpx 20rpx;
+  text-indent: 40rpx;
+}
+.block-title::after {
+  position: absolute;
+  left: 20rpx;
+  top: 10rpx;
+  content: "";
+  width: 12rpx;
+  height: 40rpx;
+  background: #2e5e86;
+}
+.block-desc {
+  display: block;
+  padding: 0 30rpx 30rpx;
+  font-size: 30rpx;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* .prod-footer {
+  margin-top: 10rpx;
+  overflow: hidden;
+}
+.btn-detail {
+  float: left;
+  width: 220rpx;
+  height: 55rpx;
+  margin-left: 60rpx;
+  line-height: 1;
+  padding: 0;
+}
+.btn-ask {
+  float: left;
+  width: 220rpx;
+  height: 55rpx;
+  margin-left: 30rpx;
+  line-height: 1;
+  padding: 0;
+} */

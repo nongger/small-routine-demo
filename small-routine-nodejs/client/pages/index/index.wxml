@@ -36,4 +36,11 @@
             <text>快速增加 CGI</text>
         </navigator>
     </view>
+
+    <!-- 增加入口 -->
+    <view class="uploader">
+        <navigator url="../list/areaList" open-type="navigate" class="uploader-text">
+            <text>前往信息管理页面</text>
+        </navigator>
+    </view>
 </view>
