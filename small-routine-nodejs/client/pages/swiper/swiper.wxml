@@ -7,14 +7,16 @@
   </block>
 </swiper>
 <view class='prod-list'>
-  <view class='prod-item' wx:for='{{prodList}}'>
+  <view class='prod-item' wx:for='{{prodList}}' bindtap='toDetail' data-index='{{index}}'>
     <image class='prod-logo' src='{{item.logo}}'></image>
     <view class='prod-body'>
       <view class='prod-title'>{{item.title}}</view>
       <text class='prod-desc'>{{item.desc}}</text>
       <view class='prod-footer'>
         <image class='btn-detail' src='/static/images/detail_study.png'></image>
-        <image class='btn-ask' src='/static/images/ask_study.png'></image>
+        <button open-type="contact" class='btn-ask'>
+          <image src='/static/images/ask_study.png' />
+        </button>
       </view>
     </view>
   </view>
