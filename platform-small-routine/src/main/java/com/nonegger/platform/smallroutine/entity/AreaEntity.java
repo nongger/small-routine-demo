@@ -16,4 +16,14 @@ public class AreaEntity {
     private String ctime;
     private String mtime;
     private Integer isDelete;
+
+    public AreaEntity() {
+    }
+
+    public AreaEntity(Long areaId, String areaName, Integer priority, Integer isDelete) {
+        this.areaId = areaId;
+        this.areaName = areaName;
+        this.priority = priority;
+        this.isDelete = isDelete;
+    }
 }
