@@ -2,8 +2,8 @@
 <view class='container'>
   <view class='widget'>
     <text class='column'>序号</text>
-    <text class='column'>区域名</text>
-    <text class='column'>优先级</text>
+    <text class='column'>简码</text>
+    <text class='column'>全称</text>
     <text class='link-column'>操作</text>
   </view>
   <scroll-view scroll-y='true'>

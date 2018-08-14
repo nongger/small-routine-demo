@@ -25,9 +25,9 @@
       },
       {
         "pagePath": "pages/swiper/swiper",
-        "text": "区域列表",
-        "iconPath": "static/images/document_64.png",
-        "selectedIconPath": "static/images/document_empty_64.png"
+        "text": "精品",
+        "iconPath": "static/images/book_64.png",
+        "selectedIconPath": "static/images/book_bookmark_64.png"
       }
     ]
   }

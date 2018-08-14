@@ -2,11 +2,11 @@
 <view class='container'>
   <form bindsubmit='formSubmit' bindreset='formRest'>
     <view class='row'>
-      <text>区域名</text>
+      <text>银行简码</text>
       <input type='text' name='areaName' placeholder='请输入区域名' value='{{areaName}}'></input>
     </view>
     <view class='row'>
-      <text>优先级</text>
+      <text>银行全称</text>
       <input type='text' name='priority' placeholder='请输入优先级' value='{{priority}}'></input>
     </view>
     <view class='row'>

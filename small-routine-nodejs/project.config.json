@@ -30,13 +30,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "join",
 					"pathName": "pages/join/join",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "list",
+					"pathName": "pages/list/areaList"
 				}
 			]
 		}

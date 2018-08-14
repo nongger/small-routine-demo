@@ -31,7 +31,7 @@ Page({
     var index=e.currentTarget.dataset.index;
     console.log(index);
     if(index==1) {
-      wx.redirectTo({
+      wx.navigateTo({
         url: '../join/join',
       });
     }
