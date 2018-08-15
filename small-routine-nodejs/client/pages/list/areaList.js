@@ -28,7 +28,7 @@ Page({
   onShow: function() {
     var that = this;
     wx.request({
-      url: 'http://pay.bilibili.co/userAuth/darren/areaList',
+      url: 'http://www.wpd.com/userAuth/darren/areaList',
       method: 'GET',
       data: {},
       success: function(res) {
@@ -63,7 +63,7 @@ Page({
       success: function (sm) {
         if (sm.confirm) {
           wx.request({
-            url: 'http://pay.bilibili.com/userAuth/darren/deleteArea',
+            url: 'http://www.wpd.com/userAuth/darren/deleteArea',
             method: 'GET',
             data: {
               'areaId': req.target.dataset.areaid

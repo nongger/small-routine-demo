@@ -8,8 +8,8 @@ Page({
     areaId: undefined,
     areaName: '',
     priority: '',
-    addUrl: 'http://pay.bilibili.com/userAuth/darren/addArea',
-    updateUrl: 'http://pay.bilibili.com/userAuth/darren/modifyArea'
+    addUrl: 'http://www.wpd.com/userAuth/darren/addArea',
+    updateUrl: 'http://www.wpd.com/userAuth/darren/modifyArea'
   },
 
   /**
@@ -24,7 +24,7 @@ Page({
       return;
     }
     wx.request({
-      url: 'http://pay.bilibili.com/userAuth/darren/getAreaById',
+      url: 'http://www.wpd.com/userAuth/darren/getAreaById',
       data: {
         'areaId': options.areaId
       },
